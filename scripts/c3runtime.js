@@ -1365,6 +1365,10 @@ self.C3_ExpressionFuncs = [
 		() => 15,
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
+			return () => f0();
+		},
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
 			const f1 = p._GetNode(1).GetBoundMethod();
 			return () => (and((("ㅤㅤ" + f0()) + "ㅤ"), f1()) + " coins");
 		},
