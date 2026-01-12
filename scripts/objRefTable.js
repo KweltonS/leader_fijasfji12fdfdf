@@ -1,0 +1,71 @@
+const C3 = self.C3;
+self.C3_GetObjectRefTable = function () {
+	return [
+		C3.Plugins.Sprite,
+		C3.Plugins.Eponesh_GameScore,
+		C3.Plugins.Text,
+		C3.Plugins.Touch,
+		C3.Plugins.List,
+		C3.Plugins.Browser,
+		C3.Plugins.TiledBg,
+		C3.Plugins.Clipboard,
+		C3.Plugins.Button,
+		C3.Plugins.System.Cnds.OnLayoutStart,
+		C3.Plugins.Eponesh_GameScore.Acts.LeaderboardFetchScoped,
+		C3.Plugins.Text.Acts.SetText,
+		C3.Plugins.Eponesh_GameScore.Cnds.OnLeaderboardFetch,
+		C3.Plugins.Eponesh_GameScore.Cnds.LeaderboardEachPlayer,
+		C3.Plugins.List.Cnds.PickByUID,
+		C3.Plugins.List.Acts.AddItem,
+		C3.Plugins.Eponesh_GameScore.Exps.LeaderboardCurPlayerName,
+		C3.Plugins.Eponesh_GameScore.Exps.LeaderboardCurPlayerScore,
+		C3.Plugins.Eponesh_GameScore.Exps.LeaderboardCurPlayerPosition,
+		C3.Plugins.List.Acts.SetCSSStyle,
+		C3.Plugins.Touch.Cnds.OnTapGesture,
+		C3.Plugins.System.Acts.AddVar,
+		C3.Plugins.Button.Cnds.OnClicked,
+		C3.Plugins.Eponesh_GameScore.Acts.PlayerAdd,
+		C3.Plugins.Eponesh_GameScore.Acts.LeaderboardSetRecord,
+		C3.Plugins.Eponesh_GameScore.Exps.PlayerGet,
+		C3.Plugins.Eponesh_GameScore.Acts.LeaderboardPublishRecord,
+		C3.Plugins.Eponesh_GameScore.Acts.PlayerSync,
+		C3.Plugins.System.Acts.WaitForPreviousActions,
+		C3.Plugins.System.Acts.SetVar,
+		C3.Plugins.Text.Acts.SetVisible,
+		C3.Plugins.Eponesh_GameScore.Cnds.VariablesCompare,
+		C3.Plugins.System.Acts.Wait,
+		C3.Plugins.System.Acts.GoToLayout
+	];
+};
+self.C3_JsPropNameTable = [
+	{Sprite: 0},
+	{GamePush: 0},
+	{leaders: 0},
+	{Touch: 0},
+	{Text: 0},
+	{Leaderbord: 0},
+	{Браузер: 0},
+	{Текст: 0},
+	{ТайловыйФон: 0},
+	{technikal_Work: 0},
+	{БуферОбмена: 0},
+	{score_txt: 0},
+	{Кнопка: 0},
+	{score: 0}
+];
+
+self.InstanceType = {
+	Sprite: class extends self.ISpriteInstance {},
+	GamePush: class extends self.C3.Plugins.Eponesh_GameScore.Instance {},
+	leaders: class extends self.ITextInstance {},
+	Touch: class extends self.IInstance {},
+	Text: class extends self.ITextInstance {},
+	Leaderbord: class extends self.IListInstance {},
+	Браузер: class extends self.IInstance {},
+	Текст: class extends self.ITextInstance {},
+	ТайловыйФон: class extends self.ITiledBackgroundInstance {},
+	technikal_Work: class extends self.ITextInstance {},
+	БуферОбмена: class extends self.IInstance {},
+	score_txt: class extends self.ITextInstance {},
+	Кнопка: class extends self.IButtonInstance {}
+}
