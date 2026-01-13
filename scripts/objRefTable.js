@@ -6,10 +6,12 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Text,
 		C3.Plugins.Touch,
 		C3.Plugins.List,
+		C3.Behaviors.Anchor,
 		C3.Plugins.Browser,
 		C3.Plugins.TiledBg,
 		C3.Plugins.Clipboard,
 		C3.Plugins.Button,
+		C3.Plugins.TextBox,
 		C3.Plugins.System.Cnds.OnLayoutStart,
 		C3.Plugins.Eponesh_GameScore.Acts.LeaderboardFetchScoped,
 		C3.Plugins.Text.Acts.SetText,
@@ -21,6 +23,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Eponesh_GameScore.Exps.LeaderboardCurPlayerName,
 		C3.Plugins.Eponesh_GameScore.Exps.LeaderboardCurPlayerScore,
 		C3.Plugins.Eponesh_GameScore.Exps.LeaderboardCurPlayerPosition,
+		C3.Plugins.TextBox.Acts.SetText,
+		C3.Plugins.Eponesh_GameScore.Exps.PlayerName,
 		C3.Plugins.List.Acts.SetCSSStyle,
 		C3.Plugins.Touch.Cnds.OnTapGesture,
 		C3.Plugins.System.Acts.AddVar,
@@ -32,6 +36,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Eponesh_GameScore.Acts.PlayerSync,
 		C3.Plugins.System.Acts.WaitForPreviousActions,
 		C3.Plugins.System.Acts.SetVar,
+		C3.Plugins.Eponesh_GameScore.Acts.PlayerSetName,
+		C3.Plugins.TextBox.Exps.Text,
 		C3.Plugins.Text.Acts.SetVisible,
 		C3.Plugins.Eponesh_GameScore.Cnds.VariablesCompare,
 		C3.Plugins.System.Acts.Wait,
@@ -44,6 +50,7 @@ self.C3_JsPropNameTable = [
 	{leaders: 0},
 	{Touch: 0},
 	{Text: 0},
+	{Якорь: 0},
 	{Leaderbord: 0},
 	{Браузер: 0},
 	{Текст: 0},
@@ -52,6 +59,8 @@ self.C3_JsPropNameTable = [
 	{БуферОбмена: 0},
 	{score_txt: 0},
 	{Кнопка: 0},
+	{NameBar: 0},
+	{SaveName: 0},
 	{score: 0}
 ];
 
@@ -68,5 +77,7 @@ self.InstanceType = {
 	technikal_Work: class extends self.ITextInstance {},
 	БуферОбмена: class extends self.IInstance {},
 	score_txt: class extends self.ITextInstance {},
-	Кнопка: class extends self.IButtonInstance {}
+	Кнопка: class extends self.IButtonInstance {},
+	NameBar: class extends self.ITextInputInstance {},
+	SaveName: class extends self.IButtonInstance {}
 }
