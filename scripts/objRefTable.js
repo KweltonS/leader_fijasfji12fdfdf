@@ -60,6 +60,7 @@ self.C3_JsPropNameTable = [
 	{Кнопка: 0},
 	{NameBar: 0},
 	{SaveName: 0},
+	{Текст2: 0},
 	{score: 0}
 ];
 
@@ -78,5 +79,6 @@ self.InstanceType = {
 	score_txt: class extends self.ITextInstance {},
 	Кнопка: class extends self.IButtonInstance {},
 	NameBar: class extends self.ITextInputInstance {},
-	SaveName: class extends self.IButtonInstance {}
+	SaveName: class extends self.IButtonInstance {},
+	Текст2: class extends self.ITextInstance {}
 }
