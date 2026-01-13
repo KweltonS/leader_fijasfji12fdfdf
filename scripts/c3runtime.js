@@ -1364,15 +1364,14 @@ function or(l, r)
 }
 
 self.C3_ExpressionFuncs = [
-		() => "score",
-		() => 25,
+		() => "score1",
+		() => 15,
 		() => "",
 		() => 10,
 		p => {
 			const v0 = p._GetNode(0).GetVar();
 			return () => (and(v0.GetValue(), " Coins") + " Нажми чтобы получить Coins!");
 		},
-		() => 15,
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => f0();
@@ -1380,7 +1379,7 @@ self.C3_ExpressionFuncs = [
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			const f1 = p._GetNode(1).GetBoundMethod();
-			return () => (and((("ㅤ" + f0()) + "ㅤ•ㅤ"), f1()) + " coins");
+			return () => (and((("" + f0()) + "ㅤ•ㅤ"), f1()) + " coins");
 		},
 		() => 7,
 		p => {
@@ -1394,7 +1393,7 @@ self.C3_ExpressionFuncs = [
 		() => "background-color",
 		() => "#000000",
 		() => "font-size",
-		() => "20px",
+		() => "17px",
 		() => "outline",
 		() => "none",
 		() => "pointer-events",
@@ -1405,8 +1404,9 @@ self.C3_ExpressionFuncs = [
 		() => "scrollbar-width",
 		() => "text-align",
 		() => "center",
-		() => "25px",
+		() => "20px",
 		() => 1,
+		() => "score",
 		p => {
 			const v0 = p._GetNode(0).GetVar();
 			return () => v0.GetValue();
