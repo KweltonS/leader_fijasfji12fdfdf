@@ -1379,12 +1379,16 @@ self.C3_ExpressionFuncs = [
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			const f1 = p._GetNode(1).GetBoundMethod();
-			return () => (and((("" + f0()) + "ㅤ•ㅤ"), f1()) + " coins");
+			return () => (and((and("", f0()) + "ㅤ•ㅤ"), f1()) + " coins");
 		},
 		() => 7,
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => and("#", f0());
+		},
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
+			return () => f0("name");
 		},
 		() => "color",
 		() => "#ffffff",
@@ -1398,13 +1402,12 @@ self.C3_ExpressionFuncs = [
 		() => "none",
 		() => "pointer-events",
 		() => "font-family",
-		() => "monospace",
+		() => "GoshaSans-Bold",
 		() => "font-weight",
 		() => "bold",
 		() => "scrollbar-width",
 		() => "text-align",
 		() => "center",
-		() => "20px",
 		() => 1,
 		() => "score",
 		p => {
