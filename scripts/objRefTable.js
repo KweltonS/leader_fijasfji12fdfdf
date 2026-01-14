@@ -17,8 +17,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Eponesh_GameScore.Exps.PlayerGet,
 		C3.Plugins.Eponesh_GameScore.Cnds.OnLeaderboardFetch,
 		C3.Plugins.Eponesh_GameScore.Cnds.LeaderboardEachPlayer,
-		C3.Plugins.List.Cnds.PickByUID,
-		C3.Plugins.List.Acts.AddItemAt,
+		C3.Plugins.System.Acts.CreateObject,
 		C3.Plugins.Eponesh_GameScore.Exps.LeaderboardCurPlayerIndex,
 		C3.Plugins.Eponesh_GameScore.Exps.LeaderboardCurPlayerPosition,
 		C3.Plugins.Eponesh_GameScore.Exps.LeaderboardCurPlayerName,
@@ -52,7 +51,8 @@ self.C3_JsPropNameTable = [
 	{Кнопка: 0},
 	{Текст2: 0},
 	{Loading_Element: 0},
-	{technical_work_element: 0}
+	{technical_work_element: 0},
+	{leader_txt: 0}
 ];
 
 self.InstanceType = {
@@ -69,5 +69,6 @@ self.InstanceType = {
 	Кнопка: class extends self.IButtonInstance {},
 	Текст2: class extends self.ITextInstance {},
 	Loading_Element: class extends self.IHTMLElementInstance {},
-	technical_work_element: class extends self.IHTMLElementInstance {}
+	technical_work_element: class extends self.IHTMLElementInstance {},
+	leader_txt: class extends self.ITextInstance {}
 }

@@ -1367,9 +1367,11 @@ self.C3_ExpressionFuncs = [
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => and(and(f0("score"), " Coins"), " Нажми чтобы получить Coins!");
 		},
+		() => 0,
+		() => 5,
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
-			return () => f0();
+			return () => (350 + (60 * f0()));
 		},
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
@@ -1410,8 +1412,7 @@ self.C3_ExpressionFuncs = [
 			return () => f0("score");
 		},
 		() => "technical_work",
-		() => "server_off",
-		() => 0
+		() => "server_off"
 ];
 
 
