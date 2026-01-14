@@ -52,8 +52,7 @@ self.C3_JsPropNameTable = [
 	{Кнопка: 0},
 	{Текст2: 0},
 	{Loading_Element: 0},
-	{technical_work_element: 0},
-	{score: 0}
+	{technical_work_element: 0}
 ];
 
 self.InstanceType = {
