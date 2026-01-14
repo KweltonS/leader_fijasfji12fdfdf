@@ -1360,7 +1360,7 @@ function or(l, r)
 
 self.C3_ExpressionFuncs = [
 		() => "score1",
-		() => 15,
+		() => 25,
 		() => "",
 		() => 10,
 		p => {
@@ -1411,8 +1411,20 @@ self.C3_ExpressionFuncs = [
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => f0("score");
 		},
+		() => 100,
+		() => "0px solid #000000",
+		() => "#28282a",
+		() => "19px",
+		() => "border-radius",
+		() => "14px",
+		() => 22,
+		() => 23,
 		() => "technical_work",
-		() => "server_off"
+		() => "server_off",
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
+			return () => f0();
+		}
 ];
 
 

@@ -22,6 +22,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Eponesh_GameScore.Exps.LeaderboardCurPlayerPosition,
 		C3.Plugins.Eponesh_GameScore.Exps.LeaderboardCurPlayerName,
 		C3.Plugins.Eponesh_GameScore.Exps.LeaderboardCurPlayerScore,
+		C3.Plugins.Text.Acts.MoveToLayer,
 		C3.Plugins.List.Acts.SetCSSStyle,
 		C3.Plugins.Touch.Cnds.OnTapGesture,
 		C3.Plugins.Eponesh_GameScore.Acts.PlayerAdd,
@@ -29,11 +30,21 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Eponesh_GameScore.Acts.LeaderboardSetRecord,
 		C3.Plugins.Eponesh_GameScore.Acts.LeaderboardPublishRecord,
 		C3.Plugins.Eponesh_GameScore.Acts.PlayerSync,
+		C3.Plugins.Touch.Cnds.HasNthTouch,
+		C3.Plugins.Touch.Cnds.CompareOrientation,
+		C3.Plugins.System.Acts.SetLayerScroll,
+		C3.Plugins.Button.Acts.SetVisible,
 		C3.Plugins.HTMLElement.Acts.SetVisible,
+		C3.Plugins.Button.Acts.SetCSSStyle,
+		C3.Plugins.Text.Cnds.PickByUID,
+		C3.Plugins.Text.Acts.SetVisible,
 		C3.Plugins.System.Cnds.OnLoadFinished,
 		C3.Plugins.Eponesh_GameScore.Cnds.VariablesCompare,
 		C3.Plugins.System.Acts.Wait,
-		C3.Plugins.System.Acts.GoToLayout
+		C3.Plugins.System.Acts.GoToLayout,
+		C3.Plugins.System.Acts.RestartLayout,
+		C3.Plugins.Eponesh_GameScore.Exps.PlayerName,
+		C3.Plugins.Eponesh_GameScore.Exps.PlayerID
 	];
 };
 self.C3_JsPropNameTable = [
@@ -41,7 +52,6 @@ self.C3_JsPropNameTable = [
 	{GamePush: 0},
 	{leaders: 0},
 	{Touch: 0},
-	{Text: 0},
 	{Якорь: 0},
 	{Leaderbord: 0},
 	{Браузер: 0},
@@ -52,7 +62,15 @@ self.C3_JsPropNameTable = [
 	{Текст2: 0},
 	{Loading_Element: 0},
 	{technical_work_element: 0},
-	{leader_txt: 0}
+	{leader_txt: 0},
+	{TEXT: 0},
+	{Player_Username_txt: 0},
+	{Player_ID_txt: 0},
+	{fc15c272ac709ac76e60d0898f65c3b: 0},
+	{Picsart_260114_: 0},
+	{Refresh_button: 0},
+	{Кнопка2: 0},
+	{scroll_x: 0}
 ];
 
 self.InstanceType = {
@@ -60,7 +78,6 @@ self.InstanceType = {
 	GamePush: class extends self.C3.Plugins.Eponesh_GameScore.Instance {},
 	leaders: class extends self.ITextInstance {},
 	Touch: class extends self.IInstance {},
-	Text: class extends self.ITextInstance {},
 	Leaderbord: class extends self.IListInstance {},
 	Браузер: class extends self.IInstance {},
 	Текст: class extends self.ITextInstance {},
@@ -70,5 +87,12 @@ self.InstanceType = {
 	Текст2: class extends self.ITextInstance {},
 	Loading_Element: class extends self.IHTMLElementInstance {},
 	technical_work_element: class extends self.IHTMLElementInstance {},
-	leader_txt: class extends self.ITextInstance {}
+	leader_txt: class extends self.ITextInstance {},
+	TEXT: class extends self.ITextInstance {},
+	Player_Username_txt: class extends self.ITextInstance {},
+	Player_ID_txt: class extends self.ITextInstance {},
+	fc15c272ac709ac76e60d0898f65c3b: class extends self.ISpriteInstance {},
+	Picsart_260114_: class extends self.ISpriteInstance {},
+	Refresh_button: class extends self.IButtonInstance {},
+	Кнопка2: class extends self.IButtonInstance {}
 }
