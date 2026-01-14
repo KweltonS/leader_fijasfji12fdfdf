@@ -43,8 +43,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Acts.Wait,
 		C3.Plugins.System.Acts.GoToLayout,
 		C3.Plugins.System.Acts.RestartLayout,
-		C3.Plugins.Eponesh_GameScore.Exps.PlayerName,
-		C3.Plugins.Eponesh_GameScore.Exps.PlayerID
+		C3.Plugins.Eponesh_GameScore.Exps.PlayerName
 	];
 };
 self.C3_JsPropNameTable = [

@@ -1421,9 +1421,14 @@ self.C3_ExpressionFuncs = [
 		() => 23,
 		() => "technical_work",
 		() => "server_off",
+		() => 2,
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => f0();
+		},
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
+			return () => f0("id");
 		}
 ];
 
