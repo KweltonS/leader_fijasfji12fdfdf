@@ -22,8 +22,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Acts.CreateObject,
 		C3.Plugins.Eponesh_GameScore.Exps.LeaderboardCurPlayerIndex,
 		C3.Plugins.Eponesh_GameScore.Exps.LeaderboardCurPlayerName,
-		C3.Plugins.Eponesh_GameScore.Exps.LeaderboardCurPlayerScore,
 		C3.Plugins.Eponesh_GameScore.Exps.LeaderboardCurPlayerPosition,
+		C3.Plugins.Eponesh_GameScore.Exps.LeaderboardCurPlayerScore,
 		C3.Plugins.Touch.Cnds.OnTapGesture,
 		C3.Plugins.Eponesh_GameScore.Acts.PlayerAdd,
 		C3.Plugins.Button.Cnds.OnClicked,
@@ -43,7 +43,9 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Eponesh_GameScore.Cnds.VariablesCompare,
 		C3.Plugins.System.Acts.GoToLayout,
 		C3.Plugins.System.Acts.RestartLayout,
-		C3.Plugins.Eponesh_GameScore.Exps.PlayerName
+		C3.Plugins.Eponesh_GameScore.Exps.PlayerName,
+		C3.Plugins.Eponesh_GameScore.Exps.PlayersCurPlayerID,
+		C3.Plugins.Eponesh_GameScore.Exps.PlayerID
 	];
 };
 self.C3_JsPropNameTable = [
@@ -60,7 +62,7 @@ self.C3_JsPropNameTable = [
 	{Текст2: 0},
 	{Loading_Element: 0},
 	{technical_work_element: 0},
-	{leader_txt: 0},
+	{leadername_txt: 0},
 	{TEXT: 0},
 	{Player_Username_txt: 0},
 	{Player_ID_txt: 0},
@@ -68,8 +70,9 @@ self.C3_JsPropNameTable = [
 	{Picsart_260114_: 0},
 	{Refresh_button: 0},
 	{Leaderbord_button: 0},
-	{leader_txt2: 0},
+	{leaderid_txt: 0},
 	{Button: 0},
+	{leaderbalance_txt2: 0},
 	{scroll_x: 0}
 ];
 
@@ -86,7 +89,7 @@ self.InstanceType = {
 	Текст2: class extends self.ITextInstance {},
 	Loading_Element: class extends self.IHTMLElementInstance {},
 	technical_work_element: class extends self.IHTMLElementInstance {},
-	leader_txt: class extends self.ITextInstance {},
+	leadername_txt: class extends self.ITextInstance {},
 	TEXT: class extends self.ITextInstance {},
 	Player_Username_txt: class extends self.ITextInstance {},
 	Player_ID_txt: class extends self.ITextInstance {},
@@ -94,6 +97,7 @@ self.InstanceType = {
 	Picsart_260114_: class extends self.ISpriteInstance {},
 	Refresh_button: class extends self.IButtonInstance {},
 	Leaderbord_button: class extends self.IButtonInstance {},
-	leader_txt2: class extends self.ITextInstance {},
-	Button: class extends self.IButtonInstance {}
+	leaderid_txt: class extends self.ITextInstance {},
+	Button: class extends self.IButtonInstance {},
+	leaderbalance_txt2: class extends self.ITextInstance {}
 }

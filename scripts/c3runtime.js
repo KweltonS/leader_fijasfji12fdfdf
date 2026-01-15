@@ -1374,7 +1374,7 @@ self.C3_ExpressionFuncs = [
 		() => "background-color",
 		() => "#28282a",
 		() => "font-size",
-		() => "19px",
+		() => "17px",
 		() => "border-radius",
 		() => "14px",
 		() => "font-weight",
@@ -1382,7 +1382,7 @@ self.C3_ExpressionFuncs = [
 		() => "font-family",
 		() => "netflix-sans-core",
 		() => 19,
-		() => "16px",
+		() => "13px",
 		() => 0,
 		() => 28,
 		p => {
@@ -1391,20 +1391,23 @@ self.C3_ExpressionFuncs = [
 		},
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
-			const f1 = p._GetNode(1).GetBoundMethod();
-			return () => (and((f0() + " - "), f1()) + " coins");
+			return () => f0();
 		},
 		() => 920,
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => and("#", f0());
 		},
-		() => "score",
-		() => 1,
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
-			return () => and(and(f0("score"), " Coins"), " Нажми чтобы получить Coins!");
+			return () => (430 + (60 * f0()));
 		},
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
+			return () => and(f0(), " coins");
+		},
+		() => "score",
+		() => 1,
 		() => "#0f0f0f",
 		() => 0.1,
 		p => {
@@ -1430,6 +1433,7 @@ self.C3_ExpressionFuncs = [
 		() => "visible",
 		() => "display",
 		() => "block",
+		() => "19px",
 		() => 22,
 		() => 23,
 		() => "technical_work",
@@ -1437,11 +1441,8 @@ self.C3_ExpressionFuncs = [
 		() => 2,
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
-			return () => f0();
-		},
-		p => {
-			const f0 = p._GetNode(0).GetBoundMethod();
-			return () => f0("id");
+			const f1 = p._GetNode(1).GetBoundMethod();
+			return () => and(and(f0(), " / "), f1());
 		}
 ];
 
