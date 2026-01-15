@@ -1387,7 +1387,7 @@ self.C3_ExpressionFuncs = [
 		() => 28,
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
-			return () => (370 + (60 * f0()));
+			return () => (370 + (120 * f0()));
 		},
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
@@ -1400,7 +1400,7 @@ self.C3_ExpressionFuncs = [
 		},
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
-			return () => (430 + (60 * f0()));
+			return () => (430 + (120 * f0()));
 		},
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
